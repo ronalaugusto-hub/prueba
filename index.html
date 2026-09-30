@@ -4,172 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moda "ROMA"</title>
-    <style>
-       @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body{ /*fondo principal*/
-            font-family: "Montserrat", sans-serif;
-            background-color: #fff9f7;
-            color: #594a4a; 
-        }  
-
-        header{/*encabezado*/
-            background-color: #d88c9a;
-            padding: 30PX 20px;
-            text-align: center;
-            border-bottom: 3px solid #f08d14;
-        }
-
-        header h1{/*titulo-logo*/
-            font-family: Georgia, serif;
-            font-weight: 700;
-            font-size: 65px;
-            letter-spacing: 6px; /* Espaciado entre letras para estética premium */
-            text-transform: uppercase;
-            text-align: center;
-            color: #5c0202; /* Negro mate profundo */
-            margin: 0 0 20px 0;
-            margin-bottom: 18px;
-        }
-
-        nav{
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        nav a{/*enlaces del menu*/
-            color: #ffffff; 
-            text-decoration: none;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s ease;
-            /*color: rgb(128, 17, 17);
-            text-decoration: none;*/
-        }
-
-        nav a:hover{
-            color: #641f35;
-        }
-
-
-
-
-        main{
-            padding: 35px 25px;
-        }
-
-        .inicio{
-            text-align: center;
-            background-color: #fcecef;
-            backdrop-filter: blur(12px);
-            padding: 40px;
-            margin-bottom: 40px;
-            border-radius: 10px;
-            border: 1px solid #e8c6ce;
-        }
-
-        .inicio h2{
-            color: #641f35;
-            font-family: Georgia, serif;
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .inicio p{
-            max-width: 900px;
-            margin: 0 auto;
-            line-height: 1.7;
-            color: #594a4a;
-        }
-
-        .btn-disenos{
-            display: inline-block;/*alinear el contenido*/
-            padding: 12px 25px;
-            margin-top: 20px;
-            background-color: #8a3d52;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 20px;
-        }
-
-        #Disenos{
-            text-align: center;
-            color: #641f35;
-            font-family: Georgia,serif;
-            font-size: 32px;
-            margin-bottom: 25px;
-        }
-
-        .contenedor-disenos{
-            display: flex;
-            justify-content: center;
-            align-items: stretch;
-            flex-wrap: wrap;
-            gap: 25px;
-        }
-
-        .card{
-            width: 270px;
-            height: 620px;
-            padding: 20px;
-            background-color: #ffffff;
-            border: 2px solid #641f35;
-            border-radius: 15px;
-            text-align: center;
-        }
-        
-        .card img{
-            width: 100%;
-            height: 380px;
-            object-fit: cover;/*propiedad que controla como se adapta la imagen sin deformar*/
-            border-radius: 8px;
-        }
-        .card h3{
-            color: #8a3d52;
-            font-family: Georgia,serif;
-            font-size: 20px;
-            margin-top: 15px;
-        }
-
-        .card p{
-            margin-top: 8px;
-            color: #594a4a;
-            line-height: 1.4;
-        }
-
-        .precio{
-            font-size: 21px;
-            font-weight: bold;
-            color: #641f35;
-            margin-top: 12px;
-        }
-
-        .card button{
-            padding: 10px 20px;
-            margin-top: 15px;
-            background-color: #8a3d52;
-            border: none;
-            color: #ffffff;
-            border-radius: 20px;
-            cursor: pointer;
-        }
-
-        footer{
-            background-color: #f3dfdf;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-  
-    </style>
+    <link rel="stylesheet" href="estilos.css">      
 </head>
 <body>
     <!--Encabezado-->
@@ -183,6 +18,24 @@
         </nav>
     </header>
     <!--Contenido principal-->
+
+    <section class="carrusel">
+        <div class="contenedor-slide">
+            <div class="slide">
+                <img src="img/pasarella1.jpg">
+            </div>
+            <div class="slide">
+                <img src="img/pasarella2.jpg">
+            </div>
+            <div class="slide">
+                <img src="img/pasarella3.jpg">
+            </div>
+             <div class="slide">
+                <img src="img/pasarella4.jpg">
+            </div>
+        </div>           
+    </section>
+
     <main>
         <section class="inicio">
             <h2>"El amor por la moda se escribe con MODA ROMA"</h2>
@@ -205,21 +58,21 @@
             <h2 id="Disenos">Nuestra colección</h2>
             <div class="contenedor-disenos">
                 <div class="card">
-                    <img src="quince1.jpg" alt="Quince">
+                    <img src="img/quince1.jpg" alt="Quince">
                     <h3>Vestido Princesa 2026</h3>
                     <p>Elegancia y estilo para celebrar un día especial</p>
                     <p class="precio">S/ 1,500</p>
                     <button>Comprar ahora</button>
                 </div>
                 <div class="card">
-                    <img src="fiesta1.jpg" alt="Fiesta">
+                    <img src="img/fiesta1.jpg" alt="Fiesta">
                     <h3>Vestido Encanto</h3>
                     <p>Un diseño especial para celebrar momentos inolvidables</p>
                     <p class="precio">S/ 800</p>
                     <button>Comprar ahora</button>
                 </div>
                 <div class="card">
-                    <img src="niñas1.jpg" alt="Madrinas">
+                    <img src="img/niñas1.jpg" alt="Madrinas">
                     <h3>Vestido Azul Real</h3>
                     <p>Un diseño elegante para ocasiones especiales</p>
                     <p class="precio">S/ 600</p>
@@ -232,7 +85,9 @@
         <p>Moda Roma &copy; 2026</p>
         <p>Vestidos para momentos inolvidables</p>
         <p>Contacto: ventas@modaroma.com</p>
-    </footer>
-    
+    </footer>  
+    <script>
+        console.log('Hola mundo desde la web')
+    </script>  
 </body>
 </html>
