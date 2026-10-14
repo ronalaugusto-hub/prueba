@@ -12,17 +12,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-firestore.js"
 
 
-
-const firebaseConfig = {
-    apiKey: "AIzaSyAkW1YPGBL5tPaUHWR791F1M6aaUE1kQIE",
-    authDomain: "roma-c7cb5.firebaseapp.com",
-    projectId: "roma-c7cb5",
-    storageBucket: "roma-c7cb5.firebasestorage.app",
-    messagingSenderId: "1073866403849",
-    appId: "1:1073866403849:web:1bc1dcfd5b183486f288d8",
-    measurementId: "G-CJYV1G6GDK"
-};
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
